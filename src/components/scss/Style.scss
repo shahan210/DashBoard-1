@@ -1,7 +1,6 @@
 @forward "./side";
-body {
-  background-color: #f5f7f8;
-}
+@forward "./dash/";
+
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 6fr;

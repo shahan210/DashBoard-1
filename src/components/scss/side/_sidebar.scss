@@ -1,0 +1,30 @@
+.sidebar {
+  background-color: #eff2f5;
+  height: 687px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+}
+.sidebar-logo {
+  width: 40px;
+  mix-blend-mode: color-burn;
+}
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  padding: 10px;
+}
+.sidebar-navigation div {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.menu-icons{
+    padding-right: 5px;
+}
+.sidebar-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
