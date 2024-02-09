@@ -1,9 +1,13 @@
+@use "../global" as g;
+
 .sidebar {
   background-color: #eff2f5;
   height: 687px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .sidebar-logo {
   width: 40px;
@@ -13,18 +17,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   padding: 10px;
 }
-.sidebar-navigation div {
-  margin-bottom: 20px;
+
+.menu-icons {
+  padding-right: 10px;
+}
+.sidebar-menu {
+  transition: ease-in 0.3s;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: var(--button-border);
+  width: var(--button-width);
+  background-color: var(--button-menu);
+  --button-radius: 30px;
+  border-radius: var(--button-radius);
+  color: black;
 }
-.menu-icons{
-    padding-right: 5px;
+.active {
+  background-color: g.$menu-hover;
+  color: g.$text-hover;
 }
-.sidebar-menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sidebar-menu:hover {
+  background-color: #222222;
+  color: white;
 }
