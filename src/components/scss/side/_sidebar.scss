@@ -11,6 +11,7 @@
 }
 .sidebar-logo {
   width: 40px;
+  margin-right: 5px;
   mix-blend-mode: color-burn;
 }
 .sidebar-header {
@@ -19,10 +20,12 @@
   align-items: center;
   margin-bottom: 100px;
   padding: 10px;
+  font-weight: bold;
 }
 
 .menu-icons {
   padding-right: 10px;
+  font-size: 20px;
 }
 .sidebar-menu {
   transition: ease-in 0.3s;
@@ -33,15 +36,16 @@
   border: var(--button-border);
   width: var(--button-width);
   background-color: var(--button-menu);
-  --button-radius: 30px;
   border-radius: var(--button-radius);
   color: black;
+  cursor: pointer;
 }
 .active {
   background-color: g.$menu-hover;
   color: g.$text-hover;
 }
 .sidebar-menu:hover {
-  background-color: #222222;
+  background-color: g.$menu-hover;
+  opacity: 0.8;
   color: white;
 }
