@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
 
 export default function Dash() {
   return (
-    <div className='dash'>dash</div>
-  )
+    <div className="dash">
+      <Header />
+    </div>
+  );
 }
