@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Piechart() {
+export default function PieChart() {
   return (
-    <div>Piechart</div>
+    <div className='dash-grid-span-2 '>PieCharct</div>
   )
 }

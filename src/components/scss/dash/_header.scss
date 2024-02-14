@@ -1,0 +1,66 @@
+@forward "../side/buttons";
+
+.dash-header {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.notification {
+  cursor: pointer;
+  padding: 3px 10px 0px 0px;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: var(--button-radius);
+  transition: width ease-in-out 0.5s;
+  cursor: pointer;
+}
+.profile-image {
+  width: 40px;
+  height: 38px;
+  border-radius: var(--button-radius);
+}
+.profile-details {
+  font-size: 10px;
+  color: rgb(108, 104, 104);
+  visibility: hidden;
+}
+.name {
+  margin: 10px 10px 0px 0px;
+  font-size: 13px;
+  visibility: hidden;
+}
+.profile:hover {
+  .profile-details {
+    transition: 0.3s;
+    animation-name: delay-visibility;
+    animation-duration: 0s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+  width: 140px;
+  transition: width ease-in-out 0.5s;
+  .name {
+    transition: 0.3s;
+    animation-name: delay-visibility;
+    animation-duration: 0s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes delay-visibility {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
