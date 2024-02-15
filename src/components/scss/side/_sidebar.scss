@@ -1,7 +1,7 @@
 @use "../global" as g;
 
 .sidebar {
-  background-color: #eff2f5;
+  background-color: var(--button-menu);
   height: 687px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;

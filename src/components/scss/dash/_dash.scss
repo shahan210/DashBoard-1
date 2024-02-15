@@ -1,7 +1,8 @@
 @forward "../side/buttons";
+
 .dash {
   height: 687px;
-  background-color: #eff2f5;
+  background-color: var(--button-menu);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -19,4 +20,3 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-

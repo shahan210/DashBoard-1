@@ -1,0 +1,25 @@
+@use "../global/variables" as g;
+@forward "../side/buttons";
+
+@mixin grid-container-design {
+  background-color: g.$dash-background;
+  color: black;
+  border-radius: g.$dash-border;
+  padding: 15px;
+}
+@mixin grid-design {
+  margin: 5px;
+  background-color: var(--button-menu);
+}
+
+.grid-income {
+  @include grid-design();
+}
+.container {
+  @include grid-container-design;
+}
+.income-list {
+  display: flex;
+  margin-top: 7px;
+  justify-content: space-between;
+}
