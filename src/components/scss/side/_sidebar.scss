@@ -30,6 +30,7 @@
 .sidebar-menu {
   transition: ease-in 0.3s;
   padding: 10px;
+  padding-left: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -39,6 +40,7 @@
   border-radius: var(--button-radius);
   color: black;
   cursor: pointer;
+  width: 180px;
 }
 .active {
   background-color: g.$menu-hover;

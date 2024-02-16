@@ -8,6 +8,12 @@ export default function Savings() {
         <div className="income-list">
           <div>Real Estate</div>
           <div>2000</div>
+        </div><div className="income-list">
+          <div>Real Estate</div>
+          <div>2000</div>
+        </div><div className="income-list">
+          <div>Real Estate</div>
+          <div>2000</div>
         </div>
       </div>
     </div>

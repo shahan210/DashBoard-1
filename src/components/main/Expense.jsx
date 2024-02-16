@@ -18,14 +18,6 @@ export default function Expense() {
           <div>Maintenance</div>
           <div>10000</div>
         </div>
-        <div className="income-list">
-          <div>Maintenance</div>
-          <div>10000</div>
-        </div>
-        <div className="income-list">
-          <div>Maintenance</div>
-          <div>10000</div>
-        </div>
       </div>
     </div>
   );

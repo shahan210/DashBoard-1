@@ -5,18 +5,25 @@
   background-color: g.$dash-background;
   color: black;
   border-radius: g.$dash-border;
-  padding: 15px;
+  padding: 10px;
+  box-shadow: 10px 10px 30px #dedede;
 }
 @mixin grid-design {
-  margin: 5px;
+  margin: 5px 5px 0px 5px;
   background-color: var(--button-menu);
+  border-radius: g.$dash-border;
 }
 
 .grid-income {
   @include grid-design();
 }
 .container {
+  transition: 0.5s;
   @include grid-container-design;
+}
+.container:hover {
+  box-shadow: 10px 10px 30px #b2b2b2;
+  
 }
 .income-list {
   display: flex;

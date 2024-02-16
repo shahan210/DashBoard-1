@@ -5,15 +5,6 @@ export default function Income() {
     <div className="grid-income">
       <div className="container">
         <div style={{ textAlign: "center" }}>Income</div>
-
-        <div className="income-list">
-          <div>Rent</div>
-          <div>12000</div>
-        </div>
-        <div className="income-list">
-          <div>Rent</div>
-          <div>12000</div>
-        </div>
         <div className="income-list">
           <div>Rent</div>
           <div>12000</div>

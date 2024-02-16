@@ -13,17 +13,21 @@ export default function Dash() {
   return (
     <div className="dash">
       <Header />
-      <div className="dash-grid">
-        <Income />
-        <Expense />
-        <Savings />
-        <PieChart />
-        <Graph />
-        <div className="grid-dragndrop dash-grid-span-3 ">
-          <IncomeDnd />
-          <ExpenseDnd />
+      <div className="dash-container-1">
+        <div className="dash-container-2">
+          <div className="dash-grid">
+            <Income />
+            <Expense />
+            <Savings />
+            <PieChart />
+            <Graph />
+            <div className="grid-dragndrop dash-grid-span-3">
+              <IncomeDnd />
+              <ExpenseDnd />
+            </div>
+            <Transaction />
+          </div>
         </div>
-        <Transaction />
       </div>
     </div>
   );

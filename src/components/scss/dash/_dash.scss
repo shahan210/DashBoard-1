@@ -6,6 +6,14 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+.dash-container-1 {
+  display: flex;
+  justify-content: center;
+}
+.dash-container-2 {
+  background-color: var(--button-menu);
+  width: 90%;
+}
 .dash-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -15,6 +23,7 @@
 }
 .dash-grid-span-2 {
   grid-row: span 2;
+  margin: 5px;
 }
 .grid-dragndrop {
   display: grid;
