@@ -23,10 +23,12 @@
 }
 .container:hover {
   box-shadow: 10px 10px 30px #b2b2b2;
-  
 }
 .income-list {
   display: flex;
   margin-top: 7px;
   justify-content: space-between;
+}
+.dash-graph {
+  height: 250px;
 }
