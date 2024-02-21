@@ -8,7 +8,8 @@
 }
 .dash-container-1 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  width: 90%;
 }
 .dash-container-2 {
   background-color: var(--button-menu);
@@ -17,15 +18,13 @@
 .dash-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-rows: 1fr 1fr 2fr;
 }
 .dash-grid-span-3 {
   grid-column: span 3;
+  grid-row: span 2;
 }
 .dash-grid-span-2 {
   grid-row: span 2;
-  margin: 5px;
-}
-.grid-dragndrop {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }

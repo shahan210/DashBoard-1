@@ -17,11 +17,9 @@ export default function Dash() {
             <Income />
             <Expense />
             <Savings />
+            <IncomeDnd />
             <Graph />
-            <div className="grid-dragndrop dash-grid-span-3">
-              <IncomeDnd />
-              <ExpenseDnd />
-            </div>
+            <ExpenseDnd />
           </div>
         </div>
       </div>
