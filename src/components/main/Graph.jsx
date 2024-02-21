@@ -71,9 +71,7 @@ export default function Graph() {
   return (
     <div
       className="dash-grid-span-3"
-      style={{
-        margin: 5,
-      }}
+      
     >
       <div className="container graph-container">
         <div style={{ textAlign: "center" }}>ExpensesDnd</div>

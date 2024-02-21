@@ -7,7 +7,7 @@ export default function Header() {
     <div>
       <div className="dash-header">
         <div className="notification">
-          <Notification size="22" color="#FF8A65" variant="TwoTone" />
+          <Notification size="22" color="#555555" variant="TwoTone" />
         </div>
         <div className="profile">
           <div className="profile-details">
