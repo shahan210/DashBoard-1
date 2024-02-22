@@ -26,8 +26,9 @@
 }
 .income-list {
   display: flex;
-  // margin-top: 7px;
   justify-content: space-between;
+  padding: 10px;
+  align-items: center;
 }
 .dash-graph {
   display: flex;
@@ -36,15 +37,49 @@
 }
 .container-header {
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
+  color: #8e8b8b;
+  display: flex;
+  align-items: center;
 }
 .income-container {
   height: 120px;
 }
 .dnd-container {
-  height: 260px;
+  height: 273px;
 }
 .graph-container {
-  height: 412px;
+  height: 430px;
+  padding: 10px;
+}
+.dash-content {
+  display: flex;
+}
+.dash-money {
+  font-size: 25px;
+  font-weight: 600;
+}
+.dash-percentage {
+  font-size: 11px;
+  font-weight: 600;
+  color: #5fd16c;
+  background-color: #cfffd5;
+  border-radius: 7px;
+  padding: 5px;
+}
+.container-icons {
+  padding: 5px 10px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dash-percentage-expense {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgb(255, 81, 81);
+  background-color: #ffbfbf;
+  border-radius: 7px;
+  padding: 5px;
 }

@@ -50,29 +50,26 @@ export default function Graph() {
     datasets: [
       {
         label: "Income",
-        data: [0, 4, 5, 6, 5, 5, 4, 5, 4, 2],
+        data: [0, 4, 5, 6, 5, 5, 4, 5, 4, 2, 3, 3.5],
         borderColor: "#008140",
         backgroundColor: "#008140",
       },
       {
         label: "Expense",
-        data: [0, 3, 2, 4, 3, 3, 4, 2, 4, 3],
+        data: [0, 3, 2, 4, 3, 3, 4, 2, 4, 3, 2.7, 2.9],
         borderColor: "#D90001",
         backgroundColor: "#D90001",
       },
       {
         label: "Savings",
-        data: [0, 1, 3, 4, 2, 2, 3, 3, 2, 4],
+        data: [0, 1, 3, 4, 2, 2, 3, 3, 0, -1, 0.3, 0.6],
         borderColor: "#111111",
         backgroundColor: "#111111",
       },
     ],
   };
   return (
-    <div
-      className="dash-grid-span-3"
-      
-    >
+    <div className="dash-grid-span-3">
       <div className="container graph-container">
         <div style={{ textAlign: "center" }}>ExpensesDnd</div>
         <div className="dash-graph">
