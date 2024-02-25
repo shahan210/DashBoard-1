@@ -50,19 +50,23 @@ export default function Graph() {
     datasets: [
       {
         label: "Income",
-        data: [0, 4, 5, 6, 5, 5, 4, 5, 4, 2, 3, 3.5],
+        data: [
+          0, 4000, 5000, 6000, 5000, 5000, 4000, 5000, 4000, 2000, 3000, 3500,
+        ],
         borderColor: "#008140",
         backgroundColor: "#008140",
       },
       {
         label: "Expense",
-        data: [0, 3, 2, 4, 3, 3, 4, 2, 4, 3, 2.7, 2.9],
+        data: [
+          0, 3000, 2000, 4000, 3000, 3000, 4000, 3000, 4000, 3000, 2700, 2900,
+        ],
         borderColor: "#D90001",
         backgroundColor: "#D90001",
       },
       {
         label: "Savings",
-        data: [0, 1, 3, 4, 2, 2, 3, 3, 0, -1, 0.3, 0.6],
+        data: [0, 1000, 3000, 4000, 2000, 2000, 3000, 2000, 0, -1000, 300, 600],
         borderColor: "#111111",
         backgroundColor: "#111111",
       },
