@@ -9,9 +9,15 @@ import {
 import SortableItem from "./SortableItem";
 export default function IncomeDnd() {
   const [income, setIncome] = useState([
-    { label: ["Salary", 5000] },
-    { label: ["Rent", 2000] },
-    { label: ["Stock", 1000] },
+    {
+      label: { name: "Salary", value: 5000 },
+    },
+    {
+      label: { name: "Rent", value: 2000 },
+    },
+    {
+      label: { name: "Stock", value: 1000 },
+    },
   ]);
   function DragEnd(e) {
     // console.log("works");
@@ -35,16 +41,16 @@ export default function IncomeDnd() {
         </div>
         <div className="drag-conrtainer">
           <DndContext collisionDetection={closestCenter} onDragEnd={DragEnd}>
-            <Container align="center">
+            <div align="center">
               <SortableContext
                 strategy={verticalListSortingStrategy}
-                items={lang}
+                items={income}
               >
-                {lang.map((item) => (
+                {income.map((item) => (
                   <SortableItem key={item} id={item} />
                 ))}
               </SortableContext>
-            </Container>
+            </div>
           </DndContext>
         </div>
       </div>

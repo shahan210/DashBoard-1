@@ -10,7 +10,7 @@ export default function Income() {
           <HiOutlineDotsHorizontal cursor={"pointer"} />
         </div>
 
-        <div className="container-header">Savings</div>
+        <div className="container-header">Income</div>
         <div className="income-list">
           <div className="dash-money">$ 12,834</div>
           <div className="dash-percentage">+1.32%</div>

@@ -6,13 +6,36 @@ import {
   arrayMove,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
+import SortableItem from "./SortableItem";
 export default function ExpenseDnd() {
   const [expense, setExpense] = useState([
-    { label: ["Loan", 2000] },
-    { label: ["Groceries", 1500] },
-    { label: ["Bills", 2000] },
-    { label: ["Transportaion", 1000] },
+    {
+      label: { name: "Loan", value: 2000 },
+    },
+    {
+      label: { name: "Groceries", value: 1500 },
+    },
+    {
+      label: { name: "Bills", value: 2000 },
+    },
+    {
+      label: { name: "Transportaion", value: 1000 },
+    },
   ]);
+  function DragEnd(e) {
+    // console.log("works");
+    const { over, active } = e;
+    // console.log("active", active);
+    // console.log("over", over.id);
+    if (active.id !== over.id) {
+      setExpense((items) => {
+        const activeIndex = items.indexOf(active.id);
+        const overIndex = items.indexOf(over.id);
+        // console.log(arrayMove(items, activeIndex, overIndex));
+        return arrayMove(items, activeIndex, overIndex);
+      });
+    }
+  }
   return (
     <div className="grid-income ">
       <div className="container dnd-container">
@@ -20,22 +43,18 @@ export default function ExpenseDnd() {
           Expense List <TbDragDrop2 style={{ marginLeft: 10 }} />
         </div>
         <div className="drag-conrtainer">
-          <div className="income-list-dnd">
-            <div>Loan</div>
-            <div>2000</div>
-          </div>
-          <div className="income-list-dnd">
-            <div>Groceries</div>
-            <div>1500</div>
-          </div>
-          <div className="income-list-dnd">
-            <div>Bills</div>
-            <div>2000</div>
-          </div>
-          <div className="income-list-dnd">
-            <div>Transportaion</div>
-            <div>1000</div>
-          </div>
+          <DndContext collisionDetection={closestCenter} onDragEnd={DragEnd}>
+            <div align="center">
+              <SortableContext
+                strategy={verticalListSortingStrategy}
+                items={expense}
+              >
+                {expense.map((item) => (
+                  <SortableItem key={item} id={item} />
+                ))}
+              </SortableContext>
+            </div>
+          </DndContext>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function Expense() {
           <HiOutlineDotsHorizontal cursor={"pointer"} />
         </div>
 
-        <div className="container-header">Savings</div>
+        <div className="container-header">Expense</div>
         <div className="income-list">
           <div className="dash-money">$ 4,672</div>
           <div className="dash-percentage-expense">-2.67%</div>
