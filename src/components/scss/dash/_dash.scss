@@ -5,6 +5,9 @@
   background-color: var(--button-menu);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  @media (max-width:1440px) {
+    
+  }
 }
 .dash-container-1 {
   display: flex;

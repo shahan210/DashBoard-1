@@ -12,7 +12,7 @@ export default function SortableItem(props) {
     <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
       <div className="income-list-dnd ">
         <div>{props.id.label.name}</div>
-        <div>{props.id.label.value}</div>
+        <div>$ {props.id.label.value}</div>
       </div>
     </div>
   );
