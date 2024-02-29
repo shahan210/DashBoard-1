@@ -1,5 +1,6 @@
 @use "../global/variables" as g;
 @forward "../side/buttons";
+@use "../global" as u;
 
 @mixin grid-container-design {
   background-color: g.$dash-background;
@@ -10,7 +11,6 @@
   border: 2px solid #dbdbdb;
 }
 @mixin grid-design {
-  // margin: 5px 5px 0px 5px;
   background-color: var(--button-menu);
   border-radius: g.$dash-border;
 }
@@ -19,6 +19,9 @@
   justify-content: space-between;
   padding: 10px;
   background-color: white;
+  @include u.breakpoint(notebook) {
+    padding: 10px 5px;
+  }
 }
 
 .grid-income {
@@ -40,11 +43,21 @@
   border: 1px solid rgb(233, 213, 213);
   margin-top: 10px;
   cursor: move;
+  font-size: 20px;
+  @include u.breakpoint(notebook) {
+    padding: 5px 5px;
+    font-size: 13px;
+  }
 }
 .dash-graph {
   display: flex;
   justify-content: center;
   width: 100%;
+  @include u.breakpoint(notebook) {
+    position: relative;
+    top: 13%;
+    height: 100%;
+  }
 }
 .container-header {
   padding: 10px;
@@ -53,16 +66,25 @@
   color: #8e8b8b;
   display: flex;
   align-items: center;
+  @include u.breakpoint(notebook) {
+    padding: 15px 5px;
+  }
 }
 .income-container {
   height: 120px;
 }
 .dnd-container {
   height: 273px;
+  @include u.breakpoint(notebook) {
+    height: 263px;
+  }
 }
 .graph-container {
   height: 430px;
   padding: 10px;
+  @include u.breakpoint(notebook) {
+    height: 417px;
+  }
 }
 .dash-content {
   display: flex;
@@ -70,6 +92,9 @@
 .dash-money {
   font-size: 25px;
   font-weight: 600;
+  @include u.breakpoint(notebook) {
+    font-size: 20px;
+  }
 }
 .dash-percentage {
   font-size: 11px;
@@ -80,6 +105,9 @@
   padding: 5px;
   display: flex;
   align-items: center;
+  @include u.breakpoint(notebook) {
+    padding: 0;
+  }
 }
 .container-icons {
   padding: 5px 10px;
@@ -87,6 +115,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include u.breakpoint(notebook) {
+    padding: 7px 5px;
+  }
 }
 .dash-percentage-expense {
   font-size: 11px;
@@ -103,4 +134,7 @@
   border-radius: 8px;
   height: 210px;
   padding: 10px;
+  @include u.breakpoint(notebook) {
+    height: 195px;
+  }
 }

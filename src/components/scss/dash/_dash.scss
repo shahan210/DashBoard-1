@@ -1,12 +1,11 @@
 @forward "../side/buttons";
+@use "../global" as u;
 
 .dash {
   height: 687px;
   background-color: var(--button-menu);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  @media (max-width: 1440px) {
-  }
 }
 .dash-container-1 {
   display: flex;
@@ -16,6 +15,9 @@
 .dash-container-2 {
   background-color: var(--button-menu);
   width: 90%;
+  @include u.breakpoint(notebook) {
+    width: 95%;
+  }
 }
 .dash-grid {
   display: grid;
