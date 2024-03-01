@@ -9,32 +9,32 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebar-header">
         <img src={Logo} alt="logo" className="sidebar-logo" />
-        Stewardship
+        <p>Stewardship</p>
       </div>
       <div className="sidebar-navigation">
         <button className="sidebar-menu active">
           <MdDashboard className="menu-icons " />
-          Dashboard
+          <p>Dashboard</p>
         </button>
         <br />
         <button className="sidebar-menu">
           <IoNewspaperSharp className="menu-icons" />
-          News
+          <p>News</p>
         </button>
         <br />
         <button className="sidebar-menu">
           <BiSolidMessageSquareDetail className="menu-icons" />
-          Message
+          <p>Message</p>
         </button>
         <br />
         <button className="sidebar-menu ">
           <MdBarChart className="menu-icons" />
-          Analytics
+          <p>Analytics</p>
         </button>
         <br />
         <button className="sidebar-menu">
           <IoSettingsOutline className="menu-icons" />
-          Settings
+          <p>Settings</p>
         </button>
       </div>
     </div>

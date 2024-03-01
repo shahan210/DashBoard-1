@@ -41,8 +41,19 @@
   color: black;
   cursor: pointer;
   width: 180px;
-  @include g.breakpoint(normal) {
+  @include g.breakpoint(notebook) {
     width: 160px;
+    margin-left: 5px;
+  }
+  @include g.breakpoint(notebook) {
+    width: 60px;
+    margin-left: 5px;
+  }
+}
+p {
+  margin: 0;
+  @include g.breakpoint(tablet) {
+    display: none;
   }
 }
 .active {
