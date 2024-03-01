@@ -22,6 +22,9 @@
   @include u.breakpoint(notebook) {
     padding: 10px 5px;
   }
+  @include u.breakpoint(tablet) {
+    padding: 5px 5px;
+  }
 }
 
 .grid-income {
@@ -53,6 +56,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
+  top: 3%;
   @include u.breakpoint(notebook) {
     position: relative;
     top: 13%;
@@ -61,13 +66,17 @@
 }
 .container-header {
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   color: #8e8b8b;
   display: flex;
   align-items: center;
   @include u.breakpoint(notebook) {
     padding: 15px 5px;
+  }
+  @include u.breakpoint(tablet) {
+    padding: 8px 5px;
+    font-size: 13px;
   }
 }
 .income-container {
