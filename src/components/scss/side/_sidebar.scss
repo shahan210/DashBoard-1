@@ -45,7 +45,7 @@
     width: 160px;
     margin-left: 5px;
   }
-  @include g.breakpoint(notebook) {
+  @include g.breakpoint(tablet) {
     width: 60px;
     margin-left: 5px;
   }

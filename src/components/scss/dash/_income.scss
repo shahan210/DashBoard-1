@@ -19,11 +19,13 @@
   justify-content: space-between;
   padding: 10px;
   background-color: white;
+  align-items: center;
   @include u.breakpoint(notebook) {
     padding: 10px 5px;
   }
   @include u.breakpoint(tablet) {
     padding: 5px 5px;
+    justify-content: space-between;
   }
 }
 
@@ -46,7 +48,7 @@
   border: 1px solid rgb(233, 213, 213);
   margin-top: 10px;
   cursor: move;
-  font-size: 20px;
+  font-size: 18px;
   @include u.breakpoint(notebook) {
     padding: 5px 5px;
     font-size: 13px;
@@ -63,7 +65,11 @@
     top: 13%;
     height: 100%;
   }
+  @include u.breakpoint(tablet) {
+    top: 18%;
+  }
 }
+
 .container-header {
   padding: 10px;
   font-size: 18px;
@@ -87,12 +93,18 @@
   @include u.breakpoint(notebook) {
     height: 263px;
   }
+  @include u.breakpoint(tablet) {
+    height: 233px;
+  }
 }
 .graph-container {
   height: 430px;
   padding: 10px;
   @include u.breakpoint(notebook) {
     height: 417px;
+  }
+  @include u.breakpoint(tablet) {
+    height: 383px;
   }
 }
 .dash-content {
@@ -104,6 +116,9 @@
   @include u.breakpoint(notebook) {
     font-size: 20px;
   }
+  @include u.breakpoint(notebook) {
+    font-size: 13px;
+  }
 }
 .dash-percentage {
   font-size: 11px;
@@ -112,10 +127,11 @@
   background-color: #cfffd5;
   border-radius: 7px;
   padding: 5px;
+
   display: flex;
   align-items: center;
   @include u.breakpoint(notebook) {
-    padding: 0;
+    padding: 5px;
   }
 }
 .container-icons {
@@ -144,6 +160,6 @@
   height: 210px;
   padding: 10px;
   @include u.breakpoint(notebook) {
-    height: 195px;
+    height: 180px;
   }
 }
