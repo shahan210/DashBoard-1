@@ -87,7 +87,7 @@ canvas {
   display: flex;
   align-items: center;
   @include u.breakpoint(notebook) {
-    padding: 15px 5px;
+    padding: 10px 5px;
   }
   @include u.breakpoint(tablet) {
     padding: 8px 5px;
@@ -178,6 +178,6 @@ canvas {
   height: 210px;
   padding: 10px;
   @include u.breakpoint(notebook) {
-    height: 180px;
+    height: 200px;
   }
 }

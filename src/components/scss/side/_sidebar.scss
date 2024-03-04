@@ -8,6 +8,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include g.breakpoint(mobileL) {
+    height: auto;
+  }
 }
 .sidebar-logo {
   width: 40px;

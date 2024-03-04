@@ -6,6 +6,9 @@
   background-color: var(--button-menu);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  @include u.breakpoint(mobileL) {
+    height: auto;
+  }
 }
 .dash-container-1 {
   display: flex;
@@ -24,6 +27,9 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   grid-template-rows: 1fr 1fr 2fr;
+  @include u.breakpoint(notebook) {
+    display: block;
+  }
 }
 .dash-grid-span-3 {
   grid-column: span 3;
