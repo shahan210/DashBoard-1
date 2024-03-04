@@ -25,7 +25,7 @@
   }
   @include u.breakpoint(tablet) {
     padding: 5px 5px;
-    justify-content: space-between;
+    display: block;
   }
 }
 
@@ -53,6 +53,15 @@
     padding: 5px 5px;
     font-size: 13px;
   }
+  @include u.breakpoint(tablet) {
+    padding: 5px 5px;
+    font-size: 11px;
+  }
+}
+canvas {
+  @include u.breakpoint(tablet) {
+    height: 250px !important;
+  }
 }
 .dash-graph {
   display: flex;
@@ -66,7 +75,7 @@
     height: 100%;
   }
   @include u.breakpoint(tablet) {
-    top: 18%;
+    top: 17%;
   }
 }
 
@@ -116,8 +125,9 @@
   @include u.breakpoint(notebook) {
     font-size: 20px;
   }
-  @include u.breakpoint(notebook) {
-    font-size: 13px;
+  @include u.breakpoint(tablet) {
+    font-size: 18px;
+    margin-bottom: 7px;
   }
 }
 .dash-percentage {
@@ -132,6 +142,10 @@
   align-items: center;
   @include u.breakpoint(notebook) {
     padding: 5px;
+  }
+  @include u.breakpoint(tablet) {
+    justify-content: center;
+    width: 40px;
   }
 }
 .container-icons {
@@ -153,6 +167,10 @@
   padding: 5px;
   display: flex;
   align-items: center;
+  @include u.breakpoint(tablet) {
+    justify-content: center;
+    width: 40px;
+  }
 }
 .drag-conrtainer {
   background-color: rgb(249 249 249);
