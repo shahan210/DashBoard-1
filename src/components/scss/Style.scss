@@ -1,7 +1,18 @@
 @forward "./side";
 @forward "./dash/";
+@use "./global/" as g;
 
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 6fr;
+  @include g.breakpoint(mobileL) {
+    grid-template-columns: 0fr 6fr;
+  }
+}
+.dashboard-mobile {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  @include g.breakpoint(mobileL) {
+    grid-template-columns: 1fr 6fr;
+  }
 }

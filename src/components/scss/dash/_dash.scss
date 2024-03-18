@@ -8,12 +8,17 @@
   border-bottom-right-radius: 20px;
   @include u.breakpoint(mobileL) {
     height: auto;
+    width: 100%;
+    border-radius:20px ;
   }
 }
 .dash-container-1 {
   display: flex;
   justify-content: center;
   width: 95%;
+  @include u.breakpoint(mobileL) {
+    width: 100%;
+  }
 }
 .dash-container-2 {
   background-color: var(--button-menu);
@@ -27,7 +32,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   grid-template-rows: 1fr 1fr 2fr;
-  @include u.breakpoint(notebook) {
+  @include u.breakpoint(mobileL) {
     display: block;
   }
 }

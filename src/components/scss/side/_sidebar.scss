@@ -10,12 +10,16 @@
   justify-content: center;
   @include g.breakpoint(mobileL) {
     height: auto;
+    width: 0;
   }
 }
 .sidebar-logo {
   width: 40px;
   margin-right: 5px;
   mix-blend-mode: color-burn;
+  @include g.breakpoint(mobileL) {
+    display: block;
+  }
 }
 .sidebar-header {
   display: flex;
@@ -29,6 +33,9 @@
 .menu-icons {
   padding-right: 10px;
   font-size: 20px;
+  @include g.breakpoint(mobileL) {
+    display: none;
+  }
 }
 .sidebar-menu {
   transition: ease-in 0.3s;
@@ -51,6 +58,9 @@
   @include g.breakpoint(tablet) {
     width: 60px;
     margin-left: 5px;
+  }
+  @include g.breakpoint(mobileL) {
+    display: none;
   }
 }
 p {
